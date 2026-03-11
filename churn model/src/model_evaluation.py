@@ -21,7 +21,7 @@ class ChurnModelEvaluator:
         """
         Comprehensive model evaluation
         """
-        # Predictions
+        ## Predictions
         y_pred_proba = self.model.predict_proba(X_test)[:, 1]
         y_pred = (y_pred_proba >= threshold).astype(int)
         
@@ -241,4 +241,5 @@ class ChurnModelEvaluator:
         plt.tight_layout()
         plt.show()
         
+
         return results_df
