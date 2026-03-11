@@ -37,7 +37,7 @@ class ChurnModelEvaluator:
         print("\nClassification Report:")
         print(classification_report(y_test, y_pred, target_names=['Not Churned', 'Churned']))
         
-        # Confusion Matrix
+        ## Confusion Matrix
         cm = confusion_matrix(y_test, y_pred)
         print("\nConfusion Matrix:")
         print(cm)
@@ -243,4 +243,5 @@ class ChurnModelEvaluator:
         
 
         return results_df
+
 
