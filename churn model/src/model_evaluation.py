@@ -25,7 +25,7 @@ class ChurnModelEvaluator:
         y_pred_proba = self.model.predict_proba(X_test)[:, 1]
         y_pred = (y_pred_proba >= threshold).astype(int)
         
-        # Metrics
+        ## Metrics
         print("\n" + "="*50)
         print("MODEL EVALUATION REPORT")
         print("="*50)
@@ -243,3 +243,4 @@ class ChurnModelEvaluator:
         
 
         return results_df
+
